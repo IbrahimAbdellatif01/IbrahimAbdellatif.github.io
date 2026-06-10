@@ -262,7 +262,55 @@
       border-radius: 50%; background: var(--accent);
       flex-shrink: 0;
     }
+    /* ── COLLABORATORS ── */
+  .collab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+   gap: 1rem;
+ }
 
+  .collab-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+    transition: border-color 0.2s;
+  }
+
+  .collab-card:hover {
+    border-color: var(--accent);
+  }
+
+  .collab-logo {
+    height: 48px;
+    width: auto;
+    max-width: 140px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+
+  .collab-card:hover .collab-logo {
+    opacity: 1;
+  }
+
+  .collab-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+  }
+
+  .collab-role {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
     /* ── FOOTER ── */
     footer {
       border-top: 1px solid var(--border);
@@ -301,6 +349,7 @@
     <li><a href="#experience">Experience</a></li>
     <li><a href="#publications">Publications</a></li>
     <li><a href="#skills">Skills</a></li>
+    <li><a href="#collaborators">Collaborators</a></li>
   </ul>
 </nav>
 
@@ -588,6 +637,49 @@ Assisting in Inventory and Machines Management.
 
     </div>
   </section>
+  <!-- COLLABORATORS -->
+<section id="collaborators">
+  <p class="section-label">Collaborators</p>
+  <div class="collab-grid">
+
+    <div class="collab-card">
+      <img class="collab-logo" src="logos/saxion.png" alt="Saxion University of Applied Sciences" />
+      <p class="collab-name">Saxion University</p>
+      <p class="collab-role">SMART Mechatronics & Robotics Research Center</p>
+    </div>
+
+    <div class="collab-card">
+      <img class="collab-logo" src="logos/demcon.png" alt="Demcon Group" />
+      <p class="collab-name">Demcon Group</p>
+      <p class="collab-role">Industrial robot platform (DORA)</p>
+    </div>
+
+    <div class="collab-card">
+      <img class="collab-logo" src="logos/riwo.png" alt="RIWO" />
+      <p class="collab-name">RIWO</p>
+      <p class="collab-role">Indoor mobile robot platform</p>
+    </div>
+
+    <div class="collab-card">
+      <img class="collab-logo" src="logos/unina.png" alt="University of Naples Federico II" />
+      <p class="collab-name">UNINA</p>
+      <p class="collab-role">MSc & IGNIS CubeSat project</p>
+    </div>
+
+    <div class="collab-card">
+      <img class="collab-logo" src="logos/nile.png" alt="Nile University" />
+      <p class="collab-name">Nile University</p>
+      <p class="collab-role">BSc & RPM NU Robotics Club</p>
+    </div>
+
+    <div class="collab-card">
+      <img class="collab-logo" src="logos/orange.png" alt="Orange Digital Center Egypt" />
+      <p class="collab-name">Orange Digital Center</p>
+      <p class="collab-role">R&D Engineering Internship</p>
+    </div>
+
+  </div>
+</section>
 
 </main>
 
