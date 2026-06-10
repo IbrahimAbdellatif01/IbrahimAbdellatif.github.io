@@ -124,6 +124,26 @@
     }
     .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
 
+  .hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-photo-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+}
+
     /* ── ABOUT ── */
     .about-grid {
       display: grid;
@@ -262,6 +282,8 @@
       .tl-date { text-align: left; }
       .tl-body::before { display: none; }
       nav .nav-links { display: none; }
+      .hero-photo { width: 130px; height: 130px; }
+
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -286,32 +308,39 @@
 
   <!-- HERO -->
   <section id="hero">
-    <p class="hero-eyebrow"><span></span>Open for Collabration</p>
-    <h1>Ibrahim<br><em>Abdellatif</em></h1>
-    <p class="hero-sub">
-      Robotics researcher specialising in sensor fusion, state estimation, and SLAM.
-      Incoming PhD student at SAFiR Lab, focused on graph-based approaches for multi-robot systems.
-    </p>
-    <img
-  src="‎IMG_9848_2.jpg"
-  alt="Ibrahim Abdellatif"
-  style="
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #5b8dee;
-    margin-bottom: 1.5rem;
-    display: block;
-  "
-/>
-    <div class="hero-links">
-      <a class="btn btn-primary" href="mailto:ab.abdellatif@studenti.unina.it">Get in touch</a>
-      <a class="btn btn-ghost" href="https://www.linkedin.com/in/ibrahim-abdellatif-aa6758150/" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn btn-ghost" href="https://scholar.google.com/citations?user=_Dp6kHkAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-      <a class="btn btn-ghost" href="https://www.researchgate.net/profile/Ibrahim-Abdellatif-4?ev=hdr_xprf" target="_blank" rel="noopener">ResearchGate</a>
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="hero-eyebrow"><span></span>Open for Collabration</p>
+        <h1>Ibrahim<br><em>Abdellatif</em></h1>
+        <p class="hero-sub">
+          Robotics researcher specialising in sensor fusion, state estimation, and SLAM.
+          Incoming PhD student at SAFiR Lab, focused on graph-based approaches for multi-robot systems.
+          </p>
+
+      <div class="hero-links">
+        <a class="btn btn-primary" href="mailto:ab.abdellatif@studenti.unina.it">Get in touch</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/ibrahim-abdellatif-aa6758150/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://scholar.google.com/citations?user=_Dp6kHkAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="btn btn-ghost" href="https://www.researchgate.net/profile/Ibrahim-Abdellatif-4?ev=hdr_xprf" target="_blank" rel="noopener">ResearchGate</a>
+      </div>
+    <div class="hero-photo-warp">
+   
+      <img
+        src="‎IMG_9848_2.jpg"
+        alt="Ibrahim Abdellatif"
+        style="
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 2px solid #5b8dee;
+          margin-bottom: 1.5rem;
+          display: block;
+        "
+      />
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- ABOUT -->
   <section id="about">
